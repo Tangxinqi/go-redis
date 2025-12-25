@@ -690,8 +690,10 @@ func (c *baseClient) assertUnstableCommand(cmd Cmder) (bool, error) {
 }
 
 func (c *baseClient) _process(ctx context.Context, cmd Cmder, attempt int) (bool, error) {
+	n := time.Now()
 	if attempt > 0 {
 		if err := internal.Sleep(ctx, c.retryBackoff(attempt)); err != nil {
+			internal.Logger.Printf(ctx, "------xinqitang--------sleep duration=%v", time.Since(n))
 			return false, err
 		}
 	}
@@ -735,13 +737,16 @@ func (c *baseClient) _process(ctx context.Context, cmd Cmder, attempt int) (bool
 			} else {
 				atomic.StoreUint32(&retryTimeout, 0)
 			}
+			internal.Logger.Printf(ctx, "------xinqitang--------read err duration=%v", time.Since(now1))
 			return err
 		}
 		internal.Logger.Printf(ctx, "------xinqitang--------read duration=%v", time.Since(now1))
 		internal.Logger.Printf(ctx, "------xinqitang--------total duration=%v", time.Since(now))
+		internal.Logger.Printf(ctx, "------xinqitang--------total1 duration=%v", time.Since(n))
 
 		return nil
 	}); err != nil {
+		internal.Logger.Printf(ctx, "------xinqitang--------retry duration=%v", time.Since(n))
 		retry := shouldRetry(err, atomic.LoadUint32(&retryTimeout) == 1)
 		return retry, err
 	}
