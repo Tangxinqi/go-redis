@@ -12,7 +12,7 @@ require (
 )
 
 require (
-	github.com/redis/go-redis/v9 v9.0.0-00010101000000-000000000000
+	github.com/redis/go-redis/v9 v9.17.2
 	go.uber.org/atomic v1.11.0
 )
 
