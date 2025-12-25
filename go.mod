@@ -2,6 +2,8 @@ module github.com/Tangxinqi/go-redis/v9
 
 go 1.21
 
+replace github.com/redis/go-redis/v9 => ./
+
 require (
 	github.com/bsm/ginkgo/v2 v2.12.0
 	github.com/bsm/gomega v1.27.10
@@ -9,7 +11,10 @@ require (
 	github.com/dgryski/go-rendezvous v0.0.0-20200823014737-9f7001d12a5f
 )
 
-require go.uber.org/atomic v1.11.0
+require (
+	github.com/redis/go-redis/v9 v9.0.0-00010101000000-000000000000
+	go.uber.org/atomic v1.11.0
+)
 
 retract (
 	v9.15.1 // This version is used to retract v9.15.0
