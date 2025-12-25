@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/redis/go-redis/v9/internal/proto"
+	"github.com/Tangxinqi/go-redis/v9/internal/proto"
 )
 
 func TestDigestCmd(t *testing.T) {
@@ -115,4 +115,3 @@ func (c *mockConn) Read(p []byte) (n int, err error) {
 	c.pos += n
 	return n, nil
 }
-

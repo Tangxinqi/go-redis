@@ -12,13 +12,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/redis/go-redis/v9/auth"
-	"github.com/redis/go-redis/v9/internal"
-	"github.com/redis/go-redis/v9/internal/pool"
-	"github.com/redis/go-redis/v9/internal/rand"
-	"github.com/redis/go-redis/v9/internal/util"
-	"github.com/redis/go-redis/v9/maintnotifications"
-	"github.com/redis/go-redis/v9/push"
+	"github.com/Tangxinqi/go-redis/v9/auth"
+	"github.com/Tangxinqi/go-redis/v9/internal"
+	"github.com/Tangxinqi/go-redis/v9/internal/pool"
+	"github.com/Tangxinqi/go-redis/v9/internal/rand"
+	"github.com/Tangxinqi/go-redis/v9/internal/util"
+	"github.com/Tangxinqi/go-redis/v9/maintnotifications"
+	"github.com/Tangxinqi/go-redis/v9/push"
 )
 
 //------------------------------------------------------------------------------

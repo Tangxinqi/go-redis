@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9"
 )
 
 func init() {
@@ -262,4 +262,3 @@ func TestDelExArgsWithDigest(t *testing.T) {
 		t.Errorf("Key should not exist after successful delete")
 	}
 }
-

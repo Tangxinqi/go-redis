@@ -18,7 +18,7 @@ helpful contributions that mean less work for you.
 
 Unsure where to begin contributing? You can start by looking through
 [help-wanted
-issues](https://github.com/redis/go-redis/issues?q=is%3Aopen+is%3Aissue+label%3ahelp-wanted).
+issues](https://github.com/Tangxinqi/go-redis/issues?q=is%3Aopen+is%3Aissue+label%3ahelp-wanted).
 
 Never contributed to open source before? Here are a couple of friendly
 tutorials:

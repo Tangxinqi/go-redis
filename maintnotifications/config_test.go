@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9/internal/util"
+	"github.com/Tangxinqi/go-redis/v9/internal/util"
 )
 
 func TestConfig(t *testing.T) {
@@ -235,7 +235,6 @@ func TestApplyDefaults(t *testing.T) {
 			t.Errorf("Expected RelaxedTimeout to be 10s (default), got %v", result.RelaxedTimeout)
 		}
 
-
 	})
 }
 
@@ -324,8 +323,6 @@ func TestIntegrationWithApplyDefaults(t *testing.T) {
 		if expectedConfig.MaxWorkers != 50 { // max(poolSize/2, 15) = max(50, 15) = 50
 			t.Errorf("Expected MaxWorkers to be 50, got %d", expectedConfig.MaxWorkers)
 		}
-
-
 
 		// Should apply defaults for missing fields (auto-calculated queue size with hybrid scaling)
 		workerBasedSize := expectedConfig.MaxWorkers * 20

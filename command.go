@@ -11,11 +11,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/redis/go-redis/v9/internal"
-	"github.com/redis/go-redis/v9/internal/hscan"
-	"github.com/redis/go-redis/v9/internal/proto"
-	"github.com/redis/go-redis/v9/internal/routing"
-	"github.com/redis/go-redis/v9/internal/util"
+	"github.com/Tangxinqi/go-redis/v9/internal"
+	"github.com/Tangxinqi/go-redis/v9/internal/hscan"
+	"github.com/Tangxinqi/go-redis/v9/internal/proto"
+	"github.com/Tangxinqi/go-redis/v9/internal/routing"
+	"github.com/Tangxinqi/go-redis/v9/internal/util"
 )
 
 // keylessCommands contains Redis commands that have empty key specifications (9th slot empty)
@@ -270,7 +270,7 @@ func cmdFirstKeyPos(cmd Cmder) int {
 	case "publish":
 		return 1
 	case "memory":
-		// https://github.com/redis/redis/issues/7493
+		// https://github.com/Tangxinqi/redis/issues/7493
 		if cmd.stringArg(1) == "usage" {
 			return 2
 		}

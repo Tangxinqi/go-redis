@@ -8,7 +8,7 @@ import (
 	"math"
 	"sort"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9"
 )
 
 // HIDE_END

@@ -8,9 +8,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/redis/go-redis/v9/internal"
-	"github.com/redis/go-redis/v9/internal/maintnotifications/logs"
-	"github.com/redis/go-redis/v9/internal/pool"
+	"github.com/Tangxinqi/go-redis/v9/internal"
+	"github.com/Tangxinqi/go-redis/v9/internal/maintnotifications/logs"
+	"github.com/Tangxinqi/go-redis/v9/internal/pool"
 )
 
 // handoffWorkerManager manages background workers and queue for connection handoffs

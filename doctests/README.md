@@ -11,7 +11,7 @@ These examples appear on the [Redis documentation](https://redis.io) site as par
 
 ### Special markup
 
-See https://github.com/redis-stack/redis-stack-website#readme for more details.
+See https://github.com/Tangxinqi-stack/redis-stack-website#readme for more details.
 
 ## How to test the examples
 

@@ -12,11 +12,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/internal/hashtag"
+	"github.com/Tangxinqi/go-redis/v9/internal/routing"
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/internal/hashtag"
-	"github.com/redis/go-redis/v9/internal/routing"
 )
 
 type clusterScenario struct {

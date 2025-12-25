@@ -11,9 +11,9 @@ import (
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/internal/proto"
-	"github.com/redis/go-redis/v9/internal/routing"
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/internal/proto"
+	"github.com/Tangxinqi/go-redis/v9/internal/routing"
 )
 
 type TimeValue struct {
@@ -975,7 +975,7 @@ var _ = Describe("Commands", func() {
 			// should be +1s to deal with the critical value problem.
 			// if too much time (>1s) is used during command execution, it may also cause the test to fail.
 			// so the ObjectIdleTime result should be <=now-start+1s
-			// link: https://github.com/redis/redis/blob/5b48d900498c85bbf4772c1d466c214439888115/src/object.c#L1265-L1272
+			// link: https://github.com/Tangxinqi/redis/blob/5b48d900498c85bbf4772c1d466c214439888115/src/object.c#L1265-L1272
 			Expect(idleTime.Val()).To(BeNumerically("<=", time.Since(start)+time.Second))
 		})
 

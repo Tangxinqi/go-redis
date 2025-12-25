@@ -30,8 +30,8 @@ You should disable maintenance notifications when:
 
 ```go
 import (
-    "github.com/redis/go-redis/v9"
-    "github.com/redis/go-redis/v9/maintnotifications"
+    "github.com/Tangxinqi/go-redis/v9"
+    "github.com/Tangxinqi/go-redis/v9/maintnotifications"
 )
 
 rdb := redis.NewClient(&redis.Options{

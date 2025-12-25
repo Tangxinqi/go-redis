@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/redis/go-redis/v9/internal"
-	"github.com/redis/go-redis/v9/internal/maintnotifications/logs"
-	"github.com/redis/go-redis/v9/internal/util"
+	"github.com/Tangxinqi/go-redis/v9/internal"
+	"github.com/Tangxinqi/go-redis/v9/internal/maintnotifications/logs"
+	"github.com/Tangxinqi/go-redis/v9/internal/util"
 )
 
 // Mode represents the maintenance notifications mode

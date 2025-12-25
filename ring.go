@@ -11,15 +11,15 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/Tangxinqi/go-redis/v9/auth"
 	"github.com/cespare/xxhash/v2"
 	"github.com/dgryski/go-rendezvous" //nolint
-	"github.com/redis/go-redis/v9/auth"
 
-	"github.com/redis/go-redis/v9/internal"
-	"github.com/redis/go-redis/v9/internal/hashtag"
-	"github.com/redis/go-redis/v9/internal/pool"
-	"github.com/redis/go-redis/v9/internal/proto"
-	"github.com/redis/go-redis/v9/internal/rand"
+	"github.com/Tangxinqi/go-redis/v9/internal"
+	"github.com/Tangxinqi/go-redis/v9/internal/hashtag"
+	"github.com/Tangxinqi/go-redis/v9/internal/pool"
+	"github.com/Tangxinqi/go-redis/v9/internal/proto"
+	"github.com/Tangxinqi/go-redis/v9/internal/rand"
 )
 
 var errRingShardsDown = errors.New("redis: all ring shards are down")

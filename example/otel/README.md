@@ -25,7 +25,7 @@ This integration provides:
 ### 1. Clone and Navigate
 
 ```bash
-git clone https://github.com/redis/go-redis.git
+git clone https://github.com/Tangxinqi/go-redis.git
 cd example/otel
 ```
 

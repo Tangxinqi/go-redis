@@ -1,9 +1,9 @@
 # Redis client for Go
 
-[![build workflow](https://github.com/redis/go-redis/actions/workflows/build.yml/badge.svg)](https://github.com/redis/go-redis/actions)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/redis/go-redis/v9)](https://pkg.go.dev/github.com/redis/go-redis/v9?tab=doc)
+[![build workflow](https://github.com/Tangxinqi/go-redis/actions/workflows/build.yml/badge.svg)](https://github.com/Tangxinqi/go-redis/actions)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/Tangxinqi/go-redis/v9)](https://pkg.go.dev/github.com/Tangxinqi/go-redis/v9?tab=doc)
 [![Documentation](https://img.shields.io/badge/redis-documentation-informational)](https://redis.io/docs/latest/develop/clients/go/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/redis/go-redis/v9)](https://goreportcard.com/report/github.com/redis/go-redis/v9)
+[![Go Report Card](https://goreportcard.com/badge/github.com/Tangxinqi/go-redis/v9)](https://goreportcard.com/report/github.com/Tangxinqi/go-redis/v9)
 [![codecov](https://codecov.io/github/redis/go-redis/graph/badge.svg?token=tsrCZKuSSw)](https://codecov.io/github/redis/go-redis)
 
 [![Discord](https://img.shields.io/discord/697882427875393627.svg?style=social&logo=discord)](https://discord.gg/W4txy5AeKM)
@@ -45,10 +45,10 @@ Please do refer to the documentation and the tests if you experience any issues.
 
 ## Resources
 
-- [Discussions](https://github.com/redis/go-redis/discussions)
+- [Discussions](https://github.com/Tangxinqi/go-redis/discussions)
 - [Chat](https://discord.gg/W4txy5AeKM)
-- [Reference](https://pkg.go.dev/github.com/redis/go-redis/v9)
-- [Examples](https://pkg.go.dev/github.com/redis/go-redis/v9#pkg-examples)
+- [Reference](https://pkg.go.dev/github.com/Tangxinqi/go-redis/v9)
+- [Examples](https://pkg.go.dev/github.com/Tangxinqi/go-redis/v9#pkg-examples)
 
 ## old documentation
 
@@ -57,7 +57,7 @@ Please do refer to the documentation and the tests if you experience any issues.
 
 ## Ecosystem
 
-- [Entra ID (Azure AD)](https://github.com/redis/go-redis-entraid)
+- [Entra ID (Azure AD)](https://github.com/Tangxinqi/go-redis-entraid)
 - [Distributed Locks](https://github.com/bsm/redislock)
 - [Redis Cache](https://github.com/go-redis/cache)
 - [Rate limiting](https://github.com/go-redis/redis_rate)
@@ -89,7 +89,7 @@ go mod init github.com/my/repo
 Then install go-redis/**v9**:
 
 ```shell
-go get github.com/redis/go-redis/v9
+go get github.com/Tangxinqi/go-redis/v9
 ```
 
 ## Quickstart
@@ -99,7 +99,7 @@ import (
     "context"
     "fmt"
 
-    "github.com/redis/go-redis/v9"
+    "github.com/Tangxinqi/go-redis/v9"
 )
 
 var ctx = context.Background()
@@ -167,13 +167,13 @@ rdb := redis.NewClient(&redis.Options{
 })
 ```
 
-**Note:** The streaming credentials provider can be used with [go-redis-entraid](https://github.com/redis/go-redis-entraid) to enable Entra ID (formerly Azure AD) authentication. This allows for seamless integration with Azure's managed identity services and token-based authentication.
+**Note:** The streaming credentials provider can be used with [go-redis-entraid](https://github.com/Tangxinqi/go-redis-entraid) to enable Entra ID (formerly Azure AD) authentication. This allows for seamless integration with Azure's managed identity services and token-based authentication.
 
 Example with Entra ID:
 ```go
 import (
-    "github.com/redis/go-redis/v9"
-    "github.com/redis/go-redis-entraid"
+    "github.com/Tangxinqi/go-redis/v9"
+    "github.com/Tangxinqi/go-redis-entraid"
 )
 
 // Create an Entra ID credentials provider
@@ -255,13 +255,13 @@ rdb := redis.NewClient(&redis.Options{
 ### Connecting via a redis url
 
 go-redis also supports connecting via the
-[redis uri specification](https://github.com/redis/redis-specifications/tree/master/uri/redis.txt).
+[redis uri specification](https://github.com/Tangxinqi/redis-specifications/tree/master/uri/redis.txt).
 The example below demonstrates how the connection can easily be configured using a string, adhering
 to this specification.
 
 ```go
 import (
-    "github.com/redis/go-redis/v9"
+    "github.com/Tangxinqi/go-redis/v9"
 )
 
 func ExampleClient() *redis.Client {
@@ -280,8 +280,8 @@ func ExampleClient() *redis.Client {
 
 ```go
 import (
-    "github.com/redis/go-redis/v9"
-    "github.com/redis/go-redis/extra/redisotel/v9"
+    "github.com/Tangxinqi/go-redis/v9"
+    "github.com/Tangxinqi/go-redis/extra/redisotel/v9"
     "errors"
 )
 
@@ -585,11 +585,11 @@ make test
 > use it to monitor applications and set up automatic alerts to receive notifications via email,
 > Slack, Telegram, and others.
 >
-> See [OpenTelemetry](https://github.com/redis/go-redis/tree/master/example/otel) example which
+> See [OpenTelemetry](https://github.com/Tangxinqi/go-redis/tree/master/example/otel) example which
 > demonstrates how you can use Uptrace to monitor go-redis.
 
 Thanks to all the people who already contributed!
 
-<a href="https://github.com/redis/go-redis/graphs/contributors">
+<a href="https://github.com/Tangxinqi/go-redis/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=redis/go-redis" />
 </a>

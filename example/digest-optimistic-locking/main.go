@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9"
 	"github.com/zeebo/xxh3"
 )
 
@@ -242,4 +242,3 @@ func clientSideDigestExample(ctx context.Context, rdb *redis.Client) {
 		fmt.Println("✓ Binary digest matches!")
 	}
 }
-

@@ -5,7 +5,7 @@ import (
 
 	"golang.org/x/tools/go/analysis/analysistest"
 
-	"github.com/redis/go-redis/internal/customvet/checks/setval"
+	"github.com/Tangxinqi/go-redis/internal/customvet/checks/setval"
 )
 
 func Test(t *testing.T) {

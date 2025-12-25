@@ -3,7 +3,7 @@ package maintnotifications
 import (
 	"errors"
 
-	"github.com/redis/go-redis/v9/internal/maintnotifications/logs"
+	"github.com/Tangxinqi/go-redis/v9/internal/maintnotifications/logs"
 )
 
 // Configuration errors

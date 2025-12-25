@@ -20,22 +20,22 @@ Brief description of the major feature/change with context and impact.
 
 ## ✨ New Features
 
-- Feature description ([#XXXX](https://github.com/redis/go-redis/pull/XXXX)) by [@username](https://github.com/username)
+- Feature description ([#XXXX](https://github.com/Tangxinqi/go-redis/pull/XXXX)) by [@username](https://github.com/username)
 - ...
 
 ## 🐛 Bug Fixes
 
-- Fix description ([#XXXX](https://github.com/redis/go-redis/pull/XXXX)) by [@username](https://github.com/username)
+- Fix description ([#XXXX](https://github.com/Tangxinqi/go-redis/pull/XXXX)) by [@username](https://github.com/username)
 - ...
 
 ## ⚡ Performance
 
-- Performance improvement description ([#XXXX](https://github.com/redis/go-redis/pull/XXXX)) by [@username](https://github.com/username)
+- Performance improvement description ([#XXXX](https://github.com/Tangxinqi/go-redis/pull/XXXX)) by [@username](https://github.com/username)
 - ...
 
 ## 🧪 Testing & Infrastructure
 
-- Testing/CI improvement ([#XXXX](https://github.com/redis/go-redis/pull/XXXX)) by [@username](https://github.com/username)
+- Testing/CI improvement ([#XXXX](https://github.com/Tangxinqi/go-redis/pull/XXXX)) by [@username](https://github.com/username)
 - ...
 
 ## 👥 Contributors
@@ -46,7 +46,7 @@ We'd like to thank all the contributors who worked on this release!
 
 ---
 
-**Full Changelog**: https://github.com/redis/go-redis/compare/vX.Y-1.Z...vX.Y.Z
+**Full Changelog**: https://github.com/Tangxinqi/go-redis/compare/vX.Y-1.Z...vX.Y.Z
 ```
 
 ## Guidelines
@@ -96,9 +96,9 @@ Each highlight should:
 - `dependabot[bot]` from contributors list
 
 ### Formatting Rules
-1. **PR Links**: Use `([#XXXX](https://github.com/redis/go-redis/pull/XXXX))` format
+1. **PR Links**: Use `([#XXXX](https://github.com/Tangxinqi/go-redis/pull/XXXX))` format
 2. **Contributor Links**: Use `[@username](https://github.com/username)` format
-3. **Issue Links**: Use `([#XXXX](https://github.com/redis/go-redis/issues/XXXX))` format
+3. **Issue Links**: Use `([#XXXX](https://github.com/Tangxinqi/go-redis/issues/XXXX))` format
 4. **Full Changelog**: Always include at the bottom with correct version comparison
 
 ### Getting PR Information

@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/internal/pool"
-	"github.com/redis/go-redis/v9/maintnotifications"
-	"github.com/redis/go-redis/v9/push"
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/internal/pool"
+	"github.com/Tangxinqi/go-redis/v9/maintnotifications"
+	"github.com/Tangxinqi/go-redis/v9/push"
 )
 
 // DiagnosticsEvent represents a notification event
@@ -81,6 +81,7 @@ func (tnh *TrackingNotificationsHook) Clear() {
 	tnh.migratedCount.Store(0)
 	tnh.failingOverCount.Store(0)
 }
+
 // wait for notification in prehook
 func (tnh *TrackingNotificationsHook) FindOrWaitForNotification(notificationType string, timeout time.Duration) (notification []interface{}, found bool) {
 	if notification, found := tnh.FindNotification(notificationType); found {

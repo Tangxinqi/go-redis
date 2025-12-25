@@ -1,10 +1,10 @@
-module github.com/redis/go-redis/example/pubsub
+module github.com/Tangxinqi/go-redis/example/pubsub
 
 go 1.21
 
-replace github.com/redis/go-redis/v9 => ../..
+replace github.com/Tangxinqi/go-redis/v9 => ../..
 
-require github.com/redis/go-redis/v9 v9.11.0
+require github.com/Tangxinqi/go-redis/v9 v9.11.0
 
 require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect

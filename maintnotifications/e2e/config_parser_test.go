@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/maintnotifications"
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/maintnotifications"
 )
 
 // DatabaseEndpoint represents a single database endpoint configuration

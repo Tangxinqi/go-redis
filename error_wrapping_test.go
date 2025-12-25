@@ -8,8 +8,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/internal/proto"
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/internal/proto"
 )
 
 // TestTypedErrorsWithHookWrapping demonstrates that typed errors work correctly

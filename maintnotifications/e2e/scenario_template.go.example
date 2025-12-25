@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/hitless"
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/hitless"
 )
 
 // TestScenarioTemplate is a template for writing scenario tests

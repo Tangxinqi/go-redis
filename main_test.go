@@ -10,10 +10,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Tangxinqi/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9/logging"
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/logging"
 )
 
 const (

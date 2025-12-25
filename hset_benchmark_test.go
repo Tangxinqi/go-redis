@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/Tangxinqi/go-redis/v9"
 )
 
 // HSET Benchmark Tests
