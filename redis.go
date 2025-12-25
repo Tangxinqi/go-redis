@@ -738,6 +738,7 @@ func (c *baseClient) _process(ctx context.Context, cmd Cmder, attempt int) (bool
 			return err
 		}
 		internal.Logger.Printf(ctx, "------xinqitang--------read duration=%v", time.Since(now1))
+		internal.Logger.Printf(ctx, "------xinqitang--------total duration=%v", time.Since(now))
 
 		return nil
 	}); err != nil {
