@@ -693,10 +693,10 @@ func (c *baseClient) _process(ctx context.Context, cmd Cmder, attempt int) (bool
 	n := time.Now()
 	if attempt > 0 {
 		if err := internal.Sleep(ctx, c.retryBackoff(attempt)); err != nil {
-			internal.Logger.Printf(ctx, "------xinqitang--------sleep err duration=%v, cmd=%s", time.Since(n), cmd.String())
+			internal.Logger.Printf(ctx, "------xinqitang--------sleep err duration=%v", time.Since(n))
 			return false, err
 		}
-		internal.Logger.Printf(ctx, "------xinqitang--------sleep duration=%v, cmd=%s", time.Since(n), cmd.String())
+		internal.Logger.Printf(ctx, "------xinqitang--------sleep duration=%v", time.Since(n))
 	}
 
 	retryTimeout := uint32(0)
@@ -709,11 +709,11 @@ func (c *baseClient) _process(ctx context.Context, cmd Cmder, attempt int) (bool
 		if err := cn.WithWriter(c.context(ctx), c.opt.WriteTimeout, func(wr *proto.Writer) error {
 			return writeCmd(wr, cmd)
 		}); err != nil {
-			internal.Logger.Printf(ctx, "------xinqitang--------write err duration=%v, err:%v, cmd=%s", time.Since(now), err, cmd.String())
+			internal.Logger.Printf(ctx, "------xinqitang--------write err duration=%v, err:%v", time.Since(now), err)
 			atomic.StoreUint32(&retryTimeout, 1)
 			return err
 		}
-		internal.Logger.Printf(ctx, "------xinqitang--------write duration=%v, cmd=%s", time.Since(now), cmd.String())
+		internal.Logger.Printf(ctx, "------xinqitang--------write duration=%v", time.Since(now))
 
 		readReplyFunc := cmd.readReply
 		// Apply unstable RESP3 search module.
@@ -739,17 +739,17 @@ func (c *baseClient) _process(ctx context.Context, cmd Cmder, attempt int) (bool
 			} else {
 				atomic.StoreUint32(&retryTimeout, 0)
 			}
-			internal.Logger.Printf(ctx, "------xinqitang--------read err duration=%v, err:%v, cmd=%s", time.Since(now1), err, cmd.String())
+			internal.Logger.Printf(ctx, "------xinqitang--------read err duration=%v, err:%v, args=%v", time.Since(now1), err, cmd.Args())
 			return err
 		}
-		internal.Logger.Printf(ctx, "------xinqitang--------read duration=%v, cmd=%s", time.Since(now1), cmd.String())
-		internal.Logger.Printf(ctx, "------xinqitang--------total duration=%v, cmd=%s", time.Since(now), cmd.String())
-		internal.Logger.Printf(ctx, "------xinqitang--------total1 duration=%v, cmd=%s", time.Since(n), cmd.String())
+		internal.Logger.Printf(ctx, "------xinqitang--------read duration=%v,cmd=%v", time.Since(now1), cmd.Args())
+		internal.Logger.Printf(ctx, "------xinqitang--------total duration=%v, cmd=%v", time.Since(now), cmd.Args())
+		internal.Logger.Printf(ctx, "------xinqitang--------total1 duration=%v, cmd=%v", time.Since(n), cmd.Args())
 
 		return nil
 	}); err != nil {
 		retry := shouldRetry(err, atomic.LoadUint32(&retryTimeout) == 1)
-		internal.Logger.Printf(ctx, "------xinqitang--------retry duration=%v, err:%v, retry:%v, cmd=%s", time.Since(n), err, retry, cmd.String())
+		internal.Logger.Printf(ctx, "------xinqitang--------retry duration=%v, err:%v, retry:%v", time.Since(n), err, retry)
 		return retry, err
 	}
 
